@@ -1,0 +1,82 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Estilso del section principal */
+.main-section {
+   width: 100%;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #f0f0f0;
+}
+
+/* Estilos del contenedor slider */
+.container-slider {
+   width: 90%;
+   height: 450px;
+   /* background-color: #00008b; */
+   box-shadow: 0 16px 26px rgba(0, 0, 139, 0.253);
+   overflow: hidden;
+}
+
+/* Estilos internos del slider */
+.slider {
+   height: auto;
+   display: flex;
+   /* background: #000000; */
+   padding: 10px 0;
+   position: relative;
+   left: 0%;
+   transition: 1s;
+}
+
+/*Estilos de los items del slider*/
+.items-slider {
+   width: 100%;
+   height: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 50px;
+   color: #fff;
+}
+
+/* Colores independiendes de los items del slider */
+.items-slider:nth-child(1) {background-color: #04009a;}
+.items-slider:nth-child(2) {background-color: #ce1212;}
+.items-slider:nth-child(3) {background-color: #72147e;}
+.items-slider:nth-child(4) {background-color: #1b1a17;}
+.items-slider:nth-child(5) {background-color: #810000;}
+.items-slider:nth-child(6) {background-color: #046582;}
+
+
+/* Estilos del contenedor navegacion del slider */
+.navigation-slider {
+   width: 35%;
+   height: 30px;
+   margin: auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   /* background-color: #fff; */
+}
+
+/* Estil los botones del slider */
+.nav-slider {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: #aaa;
+}
+
+.nav-slider:hover{
+   background-color: #00575e;
+}
+/* Agregado desde el JS*/
+.nav-slider--active {
+   background-color: #00575e;
+}
